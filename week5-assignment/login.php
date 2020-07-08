@@ -1,4 +1,6 @@
 <?php 
+// Week 5 - assignment Autos C.R.U.D.
+
 session_start();
 
 if ( isset($_POST['logout'] ) ) {
