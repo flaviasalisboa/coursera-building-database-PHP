@@ -1,4 +1,6 @@
 <?php
+// Week 2 - assignment Autos database
+
 require_once "pdo.php";
 
 if ( ! isset($_GET['name']) || strlen($_GET['name']) < 1  ) {

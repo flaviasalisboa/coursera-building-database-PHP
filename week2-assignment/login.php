@@ -1,4 +1,5 @@
-<?php // Do not put any HTML above this line
+<?php 
+// Week 2 - assignment Autos database
 
 if ( isset($_POST['cancel'] ) ) {
     header("Location: index.php");
@@ -22,6 +23,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
             $check = hash('md5', $salt.$_POST['pass']);
             if ( $check == $stored_hash ) {
                 // Redirect the browser to autos.php
+                // The error_log is saved in the file error.php
                 error_log($date." Login success ".$_POST['who'].PHP_EOL,3,"error.php");
                 header("Location: autos.php?name=".urlencode($_POST['who']));
                 return;
