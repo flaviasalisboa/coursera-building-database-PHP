@@ -1,4 +1,6 @@
 <?php
+// Week 4 - assignment Autos Post-redirect
+
 session_start();
 
 if ( ! isset($_SESSION['name']) ) {
